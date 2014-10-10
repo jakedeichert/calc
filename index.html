@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      	<meta charset="UTF-8">
+        <link rel="icon" href="../images/favicon.png">
+        <link rel="stylesheet" href="main.css">
+        <script src="app.js"></script>
+        <title>Calculator | Jacob Deichert</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <h1>Javascript Calculator</h1>
+            <div id="calculator">
+                <textarea id="textBox"></textarea>
+                <div id="buttonsWrapper">
+                    <div class="button threeWide" onclick="clearAll();" title="(ESC)">Clear</div>
+                    <div class="button" onclick="updateTextBox('7');">7</div>
+                    <div class="button" onclick="updateTextBox('8');">8</div>
+                    <div class="button" onclick="updateTextBox('9');">9</div>
+
+                    <div class="button" onclick="saveMemory();" title="Save a number">M+</div>
+                    <div class="button" onclick="showMemory();" title="Show the saved number">MR</div>
+                    <div class="button" onclick="updateTextBox(' % ');" title="Modulo">Mod</div>
+                    <div class="button" onclick="updateTextBox('4');">4</div>
+                    <div class="button" onclick="updateTextBox('5');">5</div>
+                    <div class="button" onclick="updateTextBox('6');">6</div>
+
+                    <div class="button" onclick="sinThis();" title="Finds the sine of the current input">sin</div>
+                    <div class="button" onclick="cosThis();" title="Finds the cosine of the current input">cos</div>
+                    <div class="button" onclick="tanThis();" title="Finds the tangent of the current input">tan</div>
+                    <div class="button" onclick="updateTextBox('1');">1</div>
+                    <div class="button" onclick="updateTextBox('2');">2</div>
+                    <div class="button" onclick="updateTextBox('3');">3</div>
+
+                    <div class="button" onclick="updateTextBox('Math.PI');" title="Math.PI">&#928;</div>
+                    <div class="button" onclick="updateTextBox('Math.sqrt(');" title="Math.sqrt(x)">&#8730;x</div>
+                    <div class="button" onclick="updateTextBox('Math.pow(');" title="Math.pow(base,exponent)">x<sup>y</sup></div>
+                    <div class="button" onclick="updateTextBox('0');">0</div>
+                    <div class="button" onclick="updateTextBox('.');">.</div>
+                    <div class="button" onclick="updateTextBox(',');">,</div>
+
+
+                    <div class="button" onclick="updateTextBox('(');">(</div>
+                    <div class="button" onclick="updateTextBox(')');">)</div>
+                    <div class="button" onclick="updateTextBox(' / ');">/</div>
+                    <div class="button" onclick="updateTextBox(' * ');">x</div>
+                    <div class="button" onclick="updateTextBox(' + ');">+</div>
+                    <div class="button" onclick="updateTextBox(' - ');">-</div>
+
+                    <div class="button" onclick="roundNum();" title="Rounds number to nearest integer">round</div>
+                    <div class="button" onclick="randomNum();" title="Chooses a random number between 0 and 1">rand</div>
+                    <div class="button" onclick="logThis();" title="Finds the natural log of the current input">log</div>
+                    <div class="button threeWide" onclick="evaluateExpression();showAnswer();" title="(ENTER)">&#61;</div>
+                    <hr>
+                </div>
+            </div>
+            <div id="tips">
+                <h2>Tips</h2>
+                <ul>
+                    <li>Some operations require you to close them with a closing bracket.</li>
+                    <li>Some buttons show hints if you hover over them.</li>
+                    <li>Some operations require the use of a comma.</li>
+                </ul>
+
+                <h2>Shortcut Keys</h2>
+                <ul>
+                    <li>ENTER: same as the equals sign button</li>
+                    <li>ESC: same as the Clear button</li>
+                </ul>
+            </div>
+            <p>Jacob Deichert</p>
+        </div>
+    </body>
+</html>

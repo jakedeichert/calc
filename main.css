@@ -1,0 +1,130 @@
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: hsla(0, 0%, 13%, 1);
+	color: hsla(213, 100%, 64%, 1);
+	font-family: Arial;
+	font-size: 20px;
+	margin: 0 auto;
+}
+
+h1 {
+	color: hsla(213, 100%, 35%, 1);
+	font-family: 'Press Start 2P', Arial;
+	font-size: 25px;
+	margin: 0 0 50px;
+	text-align: center;
+	text-shadow: 0 0 10px hsla(213, 100%, 34%, 1);
+}
+
+h2 {
+	color: hsla(213, 100%, 35%, 1);
+	font-family: 'Press Start 2P', Arial;
+	font-size: 18px;
+	margin: 0 0 20px;
+}
+p {
+	color: hsla(0, 0%, 20%, 1);
+	font-family: 'Press Start 2P', Arial;
+	font-size: 12px;
+	text-align: center;
+}
+
+hr {
+	border: 0;
+	clear: both;
+	height: 15px;
+}
+
+li {
+	font-family: 'Press Start 2P', Arial;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 0 0 0 10px;
+	margin: 0 0 15px 50px;
+}
+
+ul {
+	margin: 0 0 50px;
+}
+
+sup {
+	font-size: 12px;
+}
+
+a:link, a:visited {
+	color: hsla(198, 72%, 56%, 1);
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: hsla(198, 72%, 46%, 1);
+	text-decoration: underline;
+}
+ 
+.wrapper {
+	background: #151515;
+	margin: 50px auto;
+	padding: 50px 20px 20px;
+	width: 600px;
+}
+
+#calculator {
+	background: hsla(0, 0%, 40%, 1);
+	border-radius: 5px;
+	margin: 0 auto 50px auto;
+	padding: 15px;
+	width: 405px;
+}
+
+#textBox {
+    background: hsla(211, 100%, 85%, 1);
+	border: 2px solid hsla(211, 30%, 35%, 1);
+	border-radius: 5px;
+	color: hsla(211, 30%, 35%, 1);;
+	font-family: 'Press Start 2P', Arial;
+	font-size: 15px;
+	height: 150px;
+    margin: 0 0 10px 0;
+    outline: none;
+    padding: 20px;
+    width: 361px; /* 405 - 40padding - 4border */
+}
+
+#buttonsWrapper {
+	background: #101010;
+	border-radius: 5px;
+}
+
+.button {
+	background: hsla(0, 0%, 20%, 1);
+	border-radius: 5px;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin: 15px 0 0 15px;
+	text-align: center;
+	width: 50px;
+}
+
+.button:hover {
+	background: hsla(16, 100%, 50%, 1);
+	cursor: pointer;
+}
+
+.button:active {
+	background: hsla(16, 100%, 30%, 1);
+}
+
+.threeWide {
+	width: 180px;
+}
+
+#tips {
+	margin: 0 auto 50px auto;
+	width: 510px;
+}
